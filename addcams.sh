@@ -1,6 +1,6 @@
 #!/bin/bash
 USER=admin
-PASS=
+PASS="$1" #take in password on command line
 C="curl --digest -u $USER:$PASS"
 HOST="http://10.250.249.100/ISAPI/ContentMgmt/InputProxy/channels/"
 NET="10.250.249.1"
